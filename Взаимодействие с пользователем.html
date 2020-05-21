@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Взаимодействие с пользователем 2</title>
+</head>
+<body>
+<script type="text/javascript">
+var answer = true;
+    if (confirm('Подтвердите ваш возраст')) {
+        while (answer) {
+            var age = prompt('Введите ваш возраст');
+            if (confirm("Ваш возраст - " + age)) {
+                alert("Спасибо!")
+                answer = false;
+            } else {
+                alert("Повторите еще раз")
+            }
+        }
+    }
+</script>
+</body>
+</html>
